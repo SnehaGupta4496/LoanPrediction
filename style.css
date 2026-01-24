@@ -1,0 +1,134 @@
+p.description {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    background:#fff;
+    padding:35px 45px;
+    border-radius:18px;
+    max-width:650px;
+    width:100%;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    animation:fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(25px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+h2{
+    text-align:center;
+    color:#1f2937;
+    font-weight:700;
+}
+
+.description{
+    text-align:center;
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:25px;
+}
+
+.section{
+    background:#f9fafb;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.section h3{
+    color:#374151;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:500;
+    color:#374151;
+}
+
+input,select{
+    width:100%;
+    padding:12px 14px;
+    margin-top:5px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+    font-size:14px;
+}
+
+input:focus,select:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 0 3px rgba(99,102,241,0.2);
+    outline:none;
+}
+
+.hint{
+    font-size:12px;
+    color:#6b7280;
+}
+
+/* Result Box */
+.result{
+    margin-top:20px;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:600;
+    animation:fadeIn 0.5s ease-in-out;
+}
+
+.approved{
+    background:#ecfdf5;
+    color:#065f46;
+    border:1px solid #34d399;
+}
+
+.rejected{
+    background:#fef2f2;
+    color:#7f1d1d;
+    border:1px solid #f87171;
+}
+
+/* Submit Button */
+input[type="submit"]{
+    width:100%;
+    padding:14px;
+    background:linear-gradient(135deg,#6366f1,#4f46e5);
+    border:none;
+    border-radius:12px;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(79,70,229,0.4);
+}
+
+/* Responsive */
+@media(max-width:600px){
+    .container{padding:25px 20px;}
+}
